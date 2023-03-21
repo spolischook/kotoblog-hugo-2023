@@ -1,0 +1,39 @@
+---
+author: "Serhii Polishchuk"
+title: "SVG sprite in html"
+date: 2019-03-30
+tags: ["CSS"]
+draft: false
+---
+<!--more-->
+While using sprites with images is long been known, svg sprites build by another pattern.
+First of all build svg file with your svg images:
+```html
+<svg xmlns="http://www.w3.org/2000/svg">
+   <symbol id="briefcase" viewBox="0 0 8 8" fill-opacity=".7">
+      <path d="M3 0c-.55 0-1 .45-1 1v1h-1.91c-.06 0-.09.04-.09.09v2.41c0 .28.22.5.5.5h7c.28
+      0 .5-.22.5-.5v-2.41c0-.06-.04-.09-.09-.09h-1.91v-1c0-.55-.45-1-1-1h-2zm0 1h2v1h-2v-1zm-3
+      4.91v2c0 .05.04.09.09.09h7.81c.05 0 .09-.04.09-.09v-2c-.16.06-.32.09-.5.09h-7c-.18 0-.34-.04-.5-.09z"/>
+    </symbol>
+  <symbol id="people" viewBox="0 0 8 8" fill-opacity=".7">
+    <path d="M5.5 0c-.51 0-.95.35-1.22.88.45.54.72 1.28.72 2.13 0 .29-.03.55-.09.81.19.11.38.19.59.19.83
+    0 1.5-.9 1.5-2s-.67-2-1.5-2zm-3 1c-.83 0-1.5.9-1.5 2s.67 2 1.5 2 1.5-.9 1.5-2-.67-2-1.5-2zm4.75
+    3.16c-.43.51-1.02.82-1.69.84.27.38.44.84.44 1.34v.66h2v-1.66c0-.52-.31-.97-.75-1.19zm-6.5 1c-.44.22-.75.67-.75
+    1.19v1.66h5v-1.66c0-.52-.31-.97-.75-1.19-.45.53-1.06.84-1.75.84s-1.3-.32-1.75-.84z"/>
+  </symbol>
+  <symbol id="message" viewBox="0 0 8 8" fill-opacity=".7">
+    <path d="M.09 0c-.06 0-.09.04-.09.09v5.81c0 .05.04.09.09.09h5.91l2 2v-7.91c0-.06-.04-.09-.09-.09h-7.81z" />
+  </symbol>
+</svg>
+```
+Each symbol node is an svg icon with unique `id`.
+So this sprite is a svg image consist of several symbols that actually is another svg image each.
+
+Next we should display one of the iamge, and it will be so easy with ids (compare to images and pixel shifting):
+```html
+<svg width="16" height="16">
+  <use href="./../../assets/image/icons.svg#briefcase"></use>
+</svg>
+```
+
+Now you should have you svg symbol with `briefcase` id

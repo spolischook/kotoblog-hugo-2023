@@ -1,0 +1,5 @@
+baseURL: 'https://story.kotoblog.pp.ua/'
+languageCode: 'en-us'
+title: 'Serhii Polishchuk Blog'
+theme: 'hugo-theme-texify'
+ignoreErrors: ["error-remote-getjson"]
