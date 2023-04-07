@@ -7,5 +7,7 @@
 ### History
 
 First version was written using WordPress in 2009  
-Second version was written on PHP using php callbacks and [Silex Framework](https://symfony.com/blog/the-end-of-silex)  
+[Second version](https://github.com/spolischook/kotoblog) 
+was written on PHP using php callbacks and 
+[Silex Framework](https://symfony.com/blog/the-end-of-silex) in 2014  
 Third version developed on [Symfony 4](https://symfony.com/)
