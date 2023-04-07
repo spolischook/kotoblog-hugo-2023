@@ -35,7 +35,7 @@ Unfortunately there is no out of the box solution for YAML validation rules in G
 
 In daily work we faced with issue for validation the request from customer, 3-d party
 integration services and other internal services as well.
-We deal with **HTTP requests** with **internal parameters** in URL, **query params** and **json body** - 
+We deal with **HTTP requests** with **path parameters** in URL, **query params** and **json body** - 
 so that is what we should validate.  
 Gin Framework used for routing so the main function will look like that:
 ```go
