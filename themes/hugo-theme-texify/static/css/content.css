@@ -90,12 +90,18 @@
     max-width: 100%;
 }
 
+img[src$='#floatleft']
+{
+    float:left;
+    padding: 10px;
+}
+
 .content p {
     text-align: justify;
 }
 
 .content pre {
-    background-color: #F5F5F5!important;
+    /*background-color: #F5F5F5!important;*/
     border-radius: .2rem;
     font-family: 'Latin Modern Mono', Courier, monospace;
     margin-top: .5rem;
@@ -132,4 +138,13 @@
 
 .content ol, .content ul {
     margin-left: 1.5rem;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
