@@ -15,9 +15,13 @@ Honestly I don't think that is a good solution, and also it's not recommended
 <!--more-->
 
 - [Creating test environment](#creating-test-environment)
+- [Tests](#tests)
+  - [Unit tests](#unit-tests)
+  - [UI tests](#ui-tests)
 - [Choosing validation library](#choosing-validation-library)
   - [Ozzo-validation](#ozzo-validation)
   - [Jio](#jio)
+- [Conclusion](#conclusion)
 
 So I start to look for validation approach that would be convenient in Go.
 I like how validation rules in Symfony described by [YAML](https://g.co/kgs/YRKu47), 
