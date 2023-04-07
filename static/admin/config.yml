@@ -13,7 +13,7 @@ collections:
     media_folder: "images"
     public_folder: "images"
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
