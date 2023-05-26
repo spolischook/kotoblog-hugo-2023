@@ -37,8 +37,8 @@
   {{ template "_internal/opengraph.html" . }}
 
   <!-- permalink -->
-  <link rel="canonical" href="{{ .Permalink }}">
-
+<!--  <link rel="canonical" href="{{ .Permalink }}">-->
+  <link rel="canonical" href="https://story.kotoblog.pp.ua/{{ strings.TrimPrefix .Site.BaseURL .Permalink }}">
   <!-- rss -->
   {{ range .AlternativeOutputFormats -}}
   {{ printf `

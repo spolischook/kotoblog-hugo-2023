@@ -83,14 +83,16 @@ time {
     min-width: 5rem;
 }
 
+html {
+    background-color: #ccc;
+}
+
 #wrapper {
-    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     font-family: 'Latin Modern Roman', 'Times New Roman', serif;
     min-height: 100vh;
     overflow-wrap: break-word;
-    padding: 1rem;
 }
 
 .link {
@@ -126,6 +128,14 @@ time {
     align-items: center;
     display: flex;
     flex-direction: column;
+    background-color: #FAFAFA;
+    font-family: 'Latin Modern Roman', 'Times New Roman', serif;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    align-self: center;
+    max-width: 768px;
+    flex-grow: 1;
+    width: calc(100% - 2rem);
 }
 
 #header > h1 {
@@ -155,12 +165,13 @@ time {
 /* main */
 
 #main {
+    background-color: #FAFAFA;
     align-self: center;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     max-width: 768px;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     width: calc(100% - 2rem);
 }
 
@@ -170,7 +181,8 @@ time {
     align-items: center;
     display: flex;
     font-size: .9rem;
-    flex-direction: column;;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 #footer > .footnote {
