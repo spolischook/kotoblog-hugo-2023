@@ -12,3 +12,11 @@ was written on PHP using php callbacks and
 [Silex Framework](https://symfony.com/blog/the-end-of-silex) in 2014  
 [Third version](https://github.com/spolischook/kotoblog_v2) 
 developed on [Symfony 4](https://symfony.com/) in 2018
+
+### Code Hilight schema
+
+Use this command to generate new schema
+```
+HUGO_STYLE=friendly && hugo gen chromastyles --style=${HUGO_STYLE} > themes/hugo-theme-texify/static/css/syntax.css
+```
+for the available code styles you can look at https://xyproto.github.io/splash/docs/all.html

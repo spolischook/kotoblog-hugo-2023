@@ -4,3 +4,6 @@ title: 'Serhii Polishchuk'
 theme: 'hugo-theme-texify'
 ignoreErrors: ["error-remote-getjson"]
 #relativeURLs: true
+markup:
+  highlight:
+    noClasses: false
